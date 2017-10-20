@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>匀速运动</title>
+<style>
+.sport{
+width:100px;
+height:100px;
+background-color:red;
+position:absolute;
+left:200px;
+top:0px;
+}
+.sign{
+width:1px;
+height:300px;
+position:absolute;
+left:300px;
+top:0px;
+background-color:black;
+}
+body{
+height:1000px;
+}
+#button{
+position:absolute;
+left:0px;
+top:100px;}
+</style>
+<script>
+window.onload=function (){
+var button = document.getElementById("button");
+var sport = document.getElementById("sport");
+console.log("c"+sport.clientHeight);
+console.log("o"+sport.offsetHeight);
+ }
+function startMove(target,speed){
+clearInterval(timer);
+var timer = setInterval(function(){
+if(Math.abs(target-sport.offsetLeft)<Math.abs(speed)){
+sport.style.left=target+"px";
+clearInterval(timer);
+}else{
+ sport.style.left=sport.offsetLeft+speed+"px";
+  document.title=sport.offsetLeft;
+ }
+},30)
+}
+
+</script>
+</head>
+<body>
+<div class="sport" id="sport"></div>
+<div class="sign" id="sign"></div>
+<input type="button" id="button" onclick="startMove(0,-7)"/>
+</body>
+</html>
+
+</body>
+</html>
