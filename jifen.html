@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>诺利康</title>
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/jscript">
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+	$qqserverFold.click(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="nav-header">
+<i><a href="index.html">&#xe602;</a></i>会员服务<em><a href="index.html">&#xe603;</a></em>
+</div>
+
+<div class="slider">
+	  <ul>
+	    <li><a href="#" target="_blank"><img src="images/1.jpg" alt=""></a></li>
+		<li><a href="#" target="_blank"><img src="images/2.jpg" alt=""></a></li>
+		<li><a href="#" target="_blank"><img src="images/3.jpg" alt=""></a></li>
+	  </ul>
+</div>
+<script type="text/javascript" src="js/yxMobileSlider.js"></script>
+<script>
+    $(".slider").yxMobileSlider({width:640,height:320,during:10000})
+</script>
+<div class="mobox">
+<ul>
+<li>
+  <div class="pic"><img src="images/02.jpg" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i alt="">县级服务商<a href="#">申请</a></p><span>县级服务商可以推荐镇级服务商</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/02.jpg" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>镇级服务商<a href="#">申请</a></p><span>必须经过县级服务商二维码形式进入申请</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/02.jpg" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>俱乐部会员<a href="my.html">申请</a></p><span>必须经过镇级服务商进入申请</span></div>
+</li>
+<li>
+  <div class="pic"><img src="images/02.jpg" width="245" height="196" alt=""/></div>
+  <div class="txt"><p><i class="icon-jifen"></i>具体详情<a href="#">了解</a></p><span>答疑解惑</span></div>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

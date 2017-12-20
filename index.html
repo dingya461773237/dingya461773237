@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>互联网协会</title>
+<link href="css/master.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/jscript">
+$(function(){
+	var $qqServer = $('.qqserver');
+	var $qqserverFold = $('.qqserver_fold');
+	var $qqserverUnfold = $('.qqserver_arrow');
+
+
+	$qqserverFold.click(function(){
+		$qqserverFold.hide();
+		$qqServer.addClass('unfold');
+	});
+	$qqserverUnfold.click(function(){
+		$qqServer.removeClass('unfold');
+		$qqserverFold.show();
+	});
+
+
+});
+</script>
+</head>
+
+<body>
+<div class="container">
+<div class="top-header">
+<div class="logo"><img src="images/logo.png" width="104" height="60" alt=""/></div>
+<div class="user"><a href="#">登陆</a>|<a href="map">注册</a></div>
+</div>
+
+<div class="slider">
+	  <ul>
+	    <li><a href="#" target="_blank"><img src="images/1.jpg" alt="常德互联网协会"></a></li>
+		<li><a href="#" target="_blank"><img src="images/2.jpg" alt="常德互联网协会"></a></li>
+		<li><a href="#" target="_blank"><img src="images/3.jpg" alt="常德互联网协会"></a></li>
+	  </ul>
+</div>
+<script type="text/javascript" src="js/yxMobileSlider.js"></script>
+<script>
+    $(".slider").yxMobileSlider({width:640,height:320,during:10000})
+</script>
+
+<div class="nav">
+  <ul class="nav-1">
+    <li><i class="icon-fenlei font12"></i><a href="yue.html">会员资讯</a>
+	</li>
+    <li><i class="icon-xuexi font14"></i><a href="map.html">工资申报</a>
+    </li>
+    <li><i class="icon-jifen font14"></i><a href="jifen.html">会员中心</a>
+
+	</li>
+  </ul>
+</div>
+<div class="mod">
+  <div class="title"><em></em><strong>网站通知</strong><i>|<a href="#">更多</a></i></div>
+  <div class="pic">
+    <div class="tui">
+      <div class="tu"><a href="#"><img src="images/6.png" width="658" height="482" alt=""/></a></div>
+      <h1><a href="xiangxi.html">常德互联网协会</a></h1>
+      <p class="daodu">工业和信息化部部长苗圩今天在国务院新闻办公室新闻发布会上表示，2016年我国制造强国建设迈出了坚实步伐。</p>
+    </div>
+    <div class="mtu">
+    <ul class="mtut">
+      <li><div class="img-pic"><img src="images/7.png" width="124" height="107" alt=""/></div><p>互联网时代</p></li>
+      <li><div class="img-pic"><img src="images/8.png" width="124" height="107" alt=""/></div><p>互联网思维</p></li>
+      <li><div class="img-pic"><img src="images/9.png" width="124" height="107" alt=""/></div><p>用户思维</p></li>
+      <li><div class="img-pic"><img src="images/10.png" width="124" height="107" alt=""/></div><p>用户畅想</p></li>
+    </ul>
+    </div>
+  </div>
+</div>
+
+<div class="mod">
+  <div class="title"><em></em><strong>互联网大会</strong><i>|<a href="xueshu.html">更多</a></i></div>
+  <div class="video">
+    <ul>
+      <li><iframe frameborder="0" width="100%" height="auto" src="images/1.mp4" allowfullscreen></iframe></li>
+    </ul>
+  </div>
+</div>
+<div class="mod">
+<div class="title"><em></em><strong>新闻动态</strong><i>|<a href="list-anli.html">更多</a></i></div>
+<ul class="anli">
+<li>
+<div class="img-an"><img src="images/00.jpg" width="392" height="528" alt=""/></div>
+<div class="wz"><strong>常德市老干部网络宣传协会领导赴西湖调研</strong><p>11月28日，市政协原副主席、老干部网络宣传协会张新民会长一行在区委组织宣传统战部副部长王井岗的陪同下来西湖调研指导工作，他们先后参观了裕民小区、德人小镇和上优食品、明穗田园、新港美丽乡村等地进行现场调研。
+</p></div>
+</li>
+<li>
+<div class="img-an"><img src="images/01.jpg" width="392" height="528" alt=""/></div>
+<div class="wz"><strong>互联网+中小企业创新创业</strong><p>   工信部中小企业局副局长许科敏指出，互联网+，就是把互联网的创新成果与经济社会各领域深度融合，催生经济社会发展的新形态，对培育新兴产业和创新公共服务，具有重要的意义。他表示，工信部会继续实施中小企业信息化推进工程，充分发挥互联网的创新推动作用，以促进创业创新为重点，推动各类要素资源集聚、开放和共享，大力发展众创空间开放式创新，强化服务，促进应用，提高小微企业的信息化水平，推动大众创业万众创新。
+</p></div>
+</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
